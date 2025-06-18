@@ -32,7 +32,12 @@
 		font-size: 25px;
 		color: #0953a2;
 	}
-	
+
+	.boldsmtext	{
+		font-size: 20px;
+		color: #0953a2;
+	}
+
 	.lighttext	{
 		font-size: 20px;
 		color: #4793e5;
@@ -47,14 +52,14 @@
 /* Banner image */
 .banner-img-container {
 	width: 100%;
-	max-width: 1200px; /* adjust for max banner width */
+	max-width: 800px; /* adjust for max banner width */
 	margin: 0 auto;
 }
 
 	.banner-img {
 		display: block;
 		max-width: 100%;
-		height: 400px; /* adjust for max banner height */
+		height: 300px; /* adjust for max banner height */
 		object-fit: cover;
 		margin: 0 auto;
 	}
