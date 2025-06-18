@@ -40,10 +40,14 @@
 
 /* Spacing */
 	.section-spaced {
-		padding-left: 50px;
-		padding-right: 50px;
+		padding-left: 80px;
+		padding-right: 80px;
 	}
-	
+
+	.custom-navbar {
+		border: 2px, solid #0953a2; /* Your desired color */
+	}
+
 /* Banner image */
 	.banner-img-container {
 		width: 100%;
@@ -156,6 +160,13 @@
 	.carousel-inner {
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+	.carousel-inner img {
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		object-fit: cover; /* Cover fills the area; use 'contain' to show full image */
 	}
 
 	.custom-carousel-control {
