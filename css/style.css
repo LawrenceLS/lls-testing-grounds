@@ -1,4 +1,10 @@
 /* style.css */
+
+/* Scroll */
+html {
+	scroll-behavior: smooth;
+}
+
 /* Font */ 
 	@font-face {
 		font-family: 'Poppins-Thin';
@@ -40,8 +46,8 @@
 
 /* Spacing */
 	.section-spaced {
-		padding-left: 80px;
-		padding-right: 80px;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 
 	.custom-navbar {

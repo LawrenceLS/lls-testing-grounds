@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-<body class="body body d-flex flex-column min-vh-100">
+<body class="body d-flex flex-column min-vh-100">
 
 	<!-- Navigation Bar -->
 	<nav class="navbar navbar-expand-lg navbar-light custom-navbar bg-white">
@@ -25,13 +25,13 @@
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 				<ul class="navbar-nav nav-fill">
 					<li class="nav-item">
-						<a class="nav-link active" href="index.html">Beranda</a>
+						<a class="nav-link" href="index.html">Beranda</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="layanan.html">Layanan</a>
+						<a class="nav-link active" href="layanan.html">Layanan</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="portofolio.html">Portofolio</a>
@@ -44,20 +44,37 @@
 		</div>
 	</nav>
 
-	<!-- Hero Section -->
-	<header id="home" class="hero position-relative text-center">
-		<img src="img/banner.jpg" alt="Hero Background" class="hero-bg-img">
-		<div class="container position-relative hero-content">
-			<h1 class="display-4 headtext">Welcome to Gares Setjahtera Abadi</h1>
-			<p class="lead">Your partner in success</p>
-			<a href="portofolio.html" class="btn btn-outline-primary btn-lg">Lihat Portofolio</a>
-		</div>
-	</header>
+	<!-- Breadcrumbs -->
+	<div class="px-4 pt-3">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Layanan</li>
+			</ol>
+		</nav>
+	</div>
 
-	<!-- Keahlian -->
-	<section id="layanan" class="py-5 section-spaced">
-		<div class="container text-center">
-			<h2 class="text-center mb-4" style="color:#0953a2;">Keahlian Kami</h2>
+	<!-- Autoplaying Carousel -->
+	<section id="carousel" class="pt-3 section-spaced">
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="4000">
+					<img src="https://placehold.co/600x200" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item" data-bs-interval="4000">
+					<img src="https://placehold.co/600x200" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item" data-bs-interval="4000">
+					<img src="https://placehold.co/600x200" class="d-block w-100" alt="...">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Layanan -->
+	<section id="services" class="pb-5 section-spaced">
+		<div class="container mb-4">
+			<h2 class="text-center mt-5 mb-5" style="color:#0953a2;">Layanan Kami</h2>
 			<div class="row">
 
 				<!-- Cards -->
@@ -65,8 +82,8 @@
 					<div class="service-card text-center">
 						<a href="layanan/ai-solutions-blockchain.html" class="text-center text-decoration-none">
 							<div class="card-body">
-								<h5 class="card-title mb-1 darktext">AI</h5>
-								<p class="card-text lighttext">Harness the power of intelligent automation with our AI services.</p>
+								<h5 class="card-title mb-1 darktext">AI Solutions</h5>
+								<p class="card-text lighttext">Manfaatkan kekuatan otomatisasi cerdas dengan layanan AI kami.</p>
 							</div>
 						</a>
 					</div>
@@ -76,7 +93,7 @@
 						<a href="layanan/ai-solutions-blockchain.html" class="text-center text-decoration-none">
 							<div class="card-body">
 								<h5 class="card-title mb-1 darktext">Blockchain</h5>
-								<p class="card-text lighttext">We help businesses explore decentralized technologies with secure and efficient blockchain solutions.</p>
+								<p class="card-text lighttext">Kami membantu bisnis mengeksplorasi teknologi terdesentralisasi dengan solusi blockchain yang aman dan efisien.</p>
 							</div>
 						</a>
 					</div>
@@ -86,7 +103,7 @@
 						<a href="layanan/game-development.html" class="text-center text-decoration-none">
 							<div class="card-body">
 								<h5 class="card-title mb-1 darktext">Game Development</h5>
-								<p class="card-text lighttext">Our creative developers and designers craft engaging, interactive, and high-performance games across platforms.</p>
+								<p class="card-text lighttext">Pengembang dan desainer kreatif kami membuat game yang menarik, interaktif, dan berkinerja tinggi di berbagai platform.</p>
 							</div>
 						</a>
 					</div>
@@ -96,13 +113,43 @@
 						<a href="layanan/e-commerce-solutions.html" class="text-center text-decoration-none">
 							<div class="card-body">
 								<h5 class="card-title mb-1 darktext">E-Commerce</h5>
-								<p class="card-text lighttext">We build secure, scalable, and user-friendly online storefronts that drive sales and enhance customer experience.</p>
+								<p class="card-text lighttext">Kami membangun etalase daring yang aman, berskala luas, dan ramah pengguna yang mendorong penjualan dan meningkatkan pengalaman pelanggan.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 mb-4">
+					<div class="service-card text-center">
+						<a href="layanan/media-imersif-produksi-video.html" class="text-center text-decoration-none">
+							<div class="card-body">
+								<h5 class="card-title mb-1 darktext">Media Imersif & Produksi Video</h5>
+								<p class="card-text lighttext">Kami menghadirkan pengalaman visual yang memukau melalui layanan media imersif dan produksi video berkualitas tinggi.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 mb-4">
+					<div class="service-card text-center">
+						<a href="layanan/jasa-it-software-development.html" class="text-center text-decoration-none">
+							<div class="card-body">
+								<h5 class="card-title mb-1 darktext">Jasa IT & Software Development</h5>
+								<p class="card-text lighttext">Kami menyediakan layanan pengembangan perangkat lunak dan solusi teknologi informasi yang disesuaikan dengan kebutuhan bisnis Anda.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 mb-4">
+					<div class="service-card text-center">
+						<a href="layanan/it-hardware-software-trading.html" class="text-center text-decoration-none">
+							<div class="card-body">
+								<h5 class="card-title mb-1 darktext">IT Hardware & Software Trading</h5>
+								<p class="card-text lighttext">Kami menyediakan solusi pengadaan perangkat keras (hardware) dan perangkat lunak (software) yang terpercaya dan sesuai kebutuhan bisnis Anda.</p>
 							</div>
 						</a>
 					</div>
 				</div>
 			</div>
-			<a href="layanan.html" class="btn btn-outline-primary btn-lg">Lihat Layanan lain Kami</a> 
+
 		</div>
 	</section>
 
