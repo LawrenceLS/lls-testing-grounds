@@ -22,6 +22,7 @@ html {
 
 	.headtext {
 		font-family: 'Poppins-Thin';
+		color: #0953a2;
 	}
 
 	.body {
@@ -177,7 +178,7 @@ html {
 
 	.custom-carousel-control {
 		top: 50%;
-		transform: translateY(-35%);
+		transform: translateY(-33%);
 		width: 3%;
 		background: rgba(0, 0, 0, 0.2); /* Optional: adds a light background */
 	}
@@ -245,7 +246,10 @@ html {
 /* Blog */
 .blog-banner {
 	height: 300px;
-	background: url('https://placehold.co/1200x300') no-repeat center center/cover;
+	background: url('https://placehold.co/1200x300') no-repeat center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
