@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body body d-flex flex-column min-vh-100">
 	<!-- Navigation Bar -->
 	<nav class="navbar navbar-expand-lg navbar-light custom-navbar bg-white">
 		<div class="container-fluid">
@@ -56,39 +56,103 @@
 		</nav>
 	</div>
 
-	<!-- Banner -->
-	<div class="container blog-banner mb-5">
-		<h1 class="display-4 headtext">Our Blog</h1>
-	</div>
+	<!-- Autoplaying Carousel -->
+	<section id="carousel" class="pt-3 section-spaced">
+		<div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="4000">
+					<img src="https://placehold.co/600x200" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item" data-bs-interval="4000">
+					<img src="https://placehold.co/600x200" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item" data-bs-interval="4000">
+					<img src="https://placehold.co/600x200" class="d-block w-100" alt="...">
+				</div>
+			</div>
+			<h2 class="text-center headtext mt-5 mb-5"><strong>Our Blogs</strong></h2>
+		</div>
+	</section>
 
 	<!-- Blog Posts -->
-	<div class="container">
-		<div class="row g-4">
-			<!-- Blog Post 1 -->
-			<div class="col-md-4">
-				<div class="card blog-card h-100">
-					<img src="https://placehold.co/400x200" class="card-img-top" alt="Blog 1">
-					<div class="card-body">
-						<h5 class="card-title darktext">The Future of AI in Business</h5>
-						<p class="card-text lighttext">Explore how AI is transforming industries and driving intelligent automation.</p>
-						<a href="blog/blog-post-ai.html" class="btn btn-outline-primary">Read More</a>
+	<section class="mb-5">
+		<div class="container">
+			<div class="row g-4">
+				<!-- Blog Post 1 -->
+				<div class="col-md-4">
+					<div class="card blog-card h-100">
+						<img src="https://placehold.co/400x200" class="card-img-top" alt="Blog 1">
+						<div class="card-body">
+							<h5 class="card-title darktext">The Future of AI in Business</h5>
+							<p class="card-text lighttext">Explore how AI is transforming industries and driving intelligent automation.</p>
+							<a href="blog/blog-post-ai.html" class="btn btn-outline-primary">Read More</a>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<!-- Blog Post 2 -->
-			<div class="col-md-4">
-				<div class="card blog-card h-100">
-					<img src="https://placehold.co/400x200" class="card-img-top" alt="Blog 2">
-					<div class="card-body">
-						<h5 class="card-title darktext">Why E-Commerce is Booming</h5>
-						<p class="card-text lighttext">Understand the key trends that are making online retail the future of commerce.</p>
-						<a href="blog-post-ecommerce.html" class="btn btn-outline-primary">Read More</a>
+				<!-- Blog Post 1 -->
+				<div class="col-md-4">
+					<div class="card blog-card h-100">
+						<img src="https://placehold.co/400x200" class="card-img-top" alt="Blog 1">
+						<div class="card-body">
+							<h5 class="card-title darktext">The Future of AI in Business</h5>
+							<p class="card-text lighttext">Explore how AI is transforming industries and driving intelligent automation.</p>
+							<a href="blog/blog-post-ai.html" class="btn btn-outline-primary">Read More</a>
+						</div>
 					</div>
 				</div>
+
+				<!-- Blog Post 1 -->
+				<div class="col-md-4">
+					<div class="card blog-card h-100">
+						<img src="https://placehold.co/400x200" class="card-img-top" alt="Blog 1">
+						<div class="card-body">
+							<h5 class="card-title darktext">The Future of AI in Business</h5>
+							<p class="card-text lighttext">Explore how AI is transforming industries and driving intelligent automation.</p>
+							<a href="blog/blog-post-ai.html" class="btn btn-outline-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Blog Post 2 -->
+				<div class="col-md-4">
+					<div class="card blog-card h-100">
+						<img src="https://placehold.co/400x200" class="card-img-top" alt="Blog 2">
+						<div class="card-body">
+							<h5 class="card-title darktext">Why E-Commerce is Booming</h5>
+							<p class="card-text lighttext">Understand the key trends that are making online retail the future of commerce.</p>
+							<a href="blog-post-ecommerce.html" class="btn btn-outline-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Blog Post 2 -->
+				<div class="col-md-4">
+					<div class="card blog-card h-100">
+						<img src="https://placehold.co/400x200" class="card-img-top" alt="Blog 2">
+						<div class="card-body">
+							<h5 class="card-title darktext">Why E-Commerce is Booming</h5>
+							<p class="card-text lighttext">Understand the key trends that are making online retail the future of commerce.</p>
+							<a href="blog-post-ecommerce.html" class="btn btn-outline-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Blog Post 2 -->
+				<div class="col-md-4">
+					<div class="card blog-card h-100">
+						<img src="https://placehold.co/400x200" class="card-img-top" alt="Blog 2">
+						<div class="card-body">
+							<h5 class="card-title darktext">Why E-Commerce is Booming</h5>
+							<p class="card-text lighttext">Understand the key trends that are making online retail the future of commerce.</p>
+							<a href="blog-post-ecommerce.html" class="btn btn-outline-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<!-- Footer -->
 	<footer class="bg-dark text-white text-center py-3 mt-5">

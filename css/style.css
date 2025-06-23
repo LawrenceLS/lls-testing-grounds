@@ -133,8 +133,8 @@ html {
 		border-color: #0953a2;
 	}
 
-/* Service card */
-	.service-card {
+/* layanan card */
+	.layanan-card {
 		cursor: pointer;
 		padding: 20px;
 		transition: transform 0.3s, box-shadow 0.3s ease;
@@ -147,7 +147,7 @@ html {
 		background-color: white;
 	}
 
-	.service-card:hover {
+	.layanan-card:hover {
 			transform: scale(1.025);
 			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 			background-color: #e3f2fd;
@@ -156,57 +156,83 @@ html {
 		}
 
 /* Carousel */
+	/* Carousel Indicator*/
+		.carousel-indicators {
+			top: -35px; /* position from top */
+			bottom: auto; /* disable bottom positioning */
+		}
 
-	#carouselExample {
-		margin-left: 0;
-		margin-right: 0;
-		padding-left: 0;
-		padding-right: 0;
+		.carousel-indicators [data-bs-target] {
+			height: 10px;
+			width: 40px;
+			margin: 0 5px;	
+			background-color: #0953a2; /* your custom color */
+			opacity: 0.5;
+		}
+
+	/* Change active indicator color */
+		.carousel-indicators .active {
+			background-color: #0953a2; /* highlight color for active */
+			opacity: 1;
+		}
+
+	/* Carousel Content*/
+		.carousel-inner {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.carousel-inner img {
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+			object-fit: cover; /* Cover fills the area; use 'contain' to show full image */
+		}
+		
+	/* Carousel Controls*/
+		.custom-carousel-control {
+			top: 50%;
+			transform: translateY(-60%);
+			width: 3%;
+			background: rgba(0, 0, 0, 0.2); /* Optional: adds a light background */
+		}
+
+		.carousel-control-prev {
+			background-color: #0953a2;
+			left: -40px; /* Adjust this value as needed */
+		}
+
+		.carousel-control-next {
+			background-color: #0953a2;
+			right: -40px; /* Adjust this value as needed */
+		}
+
+/* portofolio image */
+
+	.card {
+		border-radius: 0 !important;
+	}
+	.card-body {
+		border-radius: 0 !important;
 	}
 
-	.carousel-inner {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.carousel-inner img {
-		height: 100%;
-		position: relative;
-		overflow: hidden;
-		object-fit: cover; /* Cover fills the area; use 'contain' to show full image */
-	}
-
-	.custom-carousel-control {
-		top: 50%;
-		transform: translateY(-33%);
-		width: 3%;
-		background: rgba(0, 0, 0, 0.2); /* Optional: adds a light background */
-	}
-
-	.carousel-control-prev {
-		left: -40px; /* Adjust this value as needed */
-	}
-
-	.carousel-control-next {
-		right: -40px; /* Adjust this value as needed */
-	}
-
-/* Gallery image */
-	.gallery-card {
+	.portofolio-card {
+		border-radius: 0 !important;
 		position: relative;
 		overflow: hidden;
 		max-width: 600px;
 		max-height: 400px;
 	}
 
-	.gallery-image {
+	.portofolio-image {
+		border-radius: 0 !important;
 		width: 100%;
 		height: auto;
 		display: block;
 		transition: transform 0.5s ease;
 	}
 
-	.gallery-card:hover .gallery-image {
+	.portofolio-card:hover .portofolio-image {
 		transform: scale(1.025);
 	}
 
@@ -221,7 +247,7 @@ html {
 		transition: opacity 0.5s ease;
 	}
 
-	.gallery-card:hover .overlay {
+	.portofolio-card:hover .overlay {
 		opacity: 1;
 	}
 
@@ -231,7 +257,7 @@ html {
 		transition: opacity 0.3s ease;
 	}
 
-	.gallery-card:hover .overlay-text {
+	.portofolio-card:hover .overlay-text {
 		opacity: 1;
 	}
 
@@ -244,20 +270,13 @@ html {
 	}
 
 /* Blog */
-.blog-banner {
-	height: 300px;
-	background: url('https://placehold.co/1200x300') no-repeat center;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	text-shadow: 1px 1px 4px #000;
-}
+	.blog-card {
+		border-radius: 0 !important;
+		border: 1px solid #0953a2;
+	}
 
-.blog-card img {
-	height: 200px;
-	object-fit: cover;
-}
+	.blog-card img {
+		border-radius: 0 !important;
+		height: 200px;
+		object-fit: cover;
+	}
